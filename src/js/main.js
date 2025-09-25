@@ -32,18 +32,27 @@ document.addEventListener("DOMContentLoaded", function () {
   }
   if (exercice3) {
     // Ecrire ici tout le code pour l'exercice 3: Ecouteurs d'événement
-    document
-      .querySelector("#exercice-3-1")
-      .addEventListener("click", function () {});
+    const heeee = document.querySelector("#exercice-3-1");
 
-    const item = document.querySelector("#exercice-3-1");
-    const btn = document.querySelector("#exercice-3-1 .btn");
-
-    btn.addEventListener("click", function () {
-      item.classList.add("highlight");
+    heeee.addEventListener("click", function () {
+      heeee.classList.add("highlight");
     });
 
-    //elementaddEventListener("click", function () {
-    //myElement.classList.add("highlight"); });
+    const bhaa = document.querySelector("#exercice-3-2 button");
+    const ha = document.querySelector("#exercice-3-2");
+
+    bhaa.addEventListener("click", function () {
+      ha.classList.toggle("highlight");
+    });
+
+    const raaah = document.querySelector("#exercice-3-3");
+
+    raaah.addEventListener("mouseenter", function () {
+      raaah.classList.add("highlight");
+    });
+
+    raaah.addEventListener("mouseleave", function () {
+      raaah.classList.remove("highlight");
+    });
   }
 });
